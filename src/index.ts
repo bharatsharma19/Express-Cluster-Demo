@@ -1,9 +1,8 @@
-// @ts-ignore
 import os from "os";
 import express from "express";
 import cluster from "cluster";
 
-const totalCPUs = 4;
+const totalCPUs = os.cpus().length;
 
 const port = 3000;
 
